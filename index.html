@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="style.css">
-  <script src="" defer></script>
+  <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +42,7 @@
         <div class="input-row">
           <div class="input-element">
             <label for="email">EMAIL</label>
-            <input type="text" id="email">
+            <input type="email" id="email">
           </div>
           <div class="input-element">
             <label for="phoneNumber">PHONE NUMBER</label>
@@ -52,16 +52,16 @@
         <div class="input-row">
           <div class="input-element">
             <label for="password">PASSWORD</label>
-            <input type="text" id="password">
+            <input type="password" id="password">
           </div>
           <div class="input-element">
             <label for="confirmPassword">CONFIRM PASSWORD</label>
-            <input type="text" id="confirmPassword">
+            <input type="password" id="confirmPassword">
           </div>
         </div>
       </section>
       <section class="content-form-bottom">
-        <button class="sign-up-button">Sign up!</button>
+        <button type="submit" class="sign-up-button">Sign up!</button>
         <div class="login-text">Already signed up? &nbsp;<a class="login-link" href="">Click here</a></div>
       </section>
     </form>

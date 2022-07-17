@@ -101,9 +101,22 @@ input {
   min-width: max(250px, 17.86vw);
   min-height: max(25px, 2.5vh);
   border-radius: 5px;
-  border-color: lightgray;
+  border-color: lightgrey;
   border-width: 1.5px;
   font-size: 1.3rem;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input:focus {
+  outline: blue solid 1.5px;
+  box-shadow: 3px 3px 10px lightgrey;
+}
+
+input.error {
+  border-color: red;
+  outline-color: red;
 }
 
 .content-form-bottom {
@@ -127,6 +140,10 @@ input {
   border-style: none;
 }
 
+.sign-up-button:hover {
+  outline: blueviolet solid 2px;
+}
+
 .login-text {
   font-size: 1.15rem;
 }
@@ -134,4 +151,8 @@ input {
 .login-link {
   text-decoration: none;
   color: blueviolet;
+}
+
+.login-link:hover {
+  text-decoration:underline;
 }
